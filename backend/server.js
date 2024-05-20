@@ -6,6 +6,8 @@ import authRoute from './routes/authRoute.js'
 import userRoute from './routes/userRoute.js'
 import Db from './config/db.js';
 
+const port = process.env.PORT || 5000
+
 // configure env
 dotenv.config();
 
@@ -20,4 +22,4 @@ app.use('/api/v1/country', countryRoute);
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/user', userRoute);
 
-app.listen(process.env.PORT, () => console.log(`Server running on PORT ${process.env.PORT}`))
+app.listen(port, () => console.log(`Server running on PORT ${process.env.PORT}`))
