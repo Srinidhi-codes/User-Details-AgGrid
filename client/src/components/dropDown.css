@@ -1,0 +1,2 @@
+.selectDrop .searchResults::-webkit-scrollbar{width: 10px !important;}
+.selectDrop .searchResults::-webkit-scrollbar-thumb{background: #ccc !important;}
