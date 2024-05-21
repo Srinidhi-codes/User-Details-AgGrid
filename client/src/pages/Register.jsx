@@ -372,7 +372,7 @@ const Register = () => {
                                         Password
                                     </label>
                                     <input
-                                        type="password"
+                                        type={showPassword ? 'text' : 'password'}
                                         value={formData['password']}
                                         placeholder={"Enter password"}
                                         onChange={(e) => { handleFormChange('password', e.target.value) }}

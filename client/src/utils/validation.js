@@ -28,7 +28,7 @@ export const formValidation = (formData, errorMessage, key) => {
         if (formData?.firstName?.length < 3 || !REGEX.NAME_REGEX.test(formData.name)) {
             errorMessage.firstName = ERROR_MESSAGE?.FIRST_NAME_ERROR
         }
-        if (formData?.lastName?.length < 3 || !REGEX.NAME_REGEX.test(formData.name)) {
+        if (formData?.lastName?.length < 0 || !REGEX.NAME_REGEX.test(formData.name)) {
             errorMessage.lastName = ERROR_MESSAGE?.LAST_NAME_ERROR
         }
         if (formData?.email?.length === 0) {
