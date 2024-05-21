@@ -373,9 +373,9 @@ const Register = () => {
                                     </label>
                                     <input
                                         type="password"
-                                        value={formData['passowrd']}
-                                        placeholder={"Enter passowrd"}
-                                        onChange={(e) => { handleFormChange('passowrd', e.target.value) }}
+                                        value={formData['password']}
+                                        placeholder={"Enter password"}
+                                        onChange={(e) => { handleFormChange('password', e.target.value) }}
                                         className="mt-1 w-full outline-none h-[2.5rem] p-5 rounded-md border bg-white text-sm text-gray-700 shadow-sm"
                                     />
                                     <ErrorMessage className="w-[7rem]" value={errorObj?.password} />
